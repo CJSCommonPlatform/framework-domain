@@ -10,7 +10,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static uk.gov.justice.services.messaging.JsonEnvelope.envelopeFrom;
-import static uk.gov.justice.services.test.utils.core.messaging.MetadataBuilderFactory.metadataWithRandomUUID;
+import static uk.gov.justice.services.messaging.JsonEnvelope.metadataBuilder;
 
 import uk.gov.justice.domain.aggregate.PrivateAggregate;
 import uk.gov.justice.domain.aggregate.TestAggregate;
@@ -72,7 +72,13 @@ public class DefaultAggregateServiceTest {
         JsonObject eventPayloadA = mock(JsonObject.class);
         EventA eventA = mock(EventA.class);
         when(jsonObjectToObjectConverter.convert(eventPayloadA, EventA.class)).thenReturn(eventA);
-        when(eventStream.read()).thenReturn(Stream.of(envelopeFrom(metadataWithRandomUUID("eventA"), eventPayloadA)));
+        when(eventStream.read()).thenReturn(Stream.of(
+                envelopeFrom(
+                        metadataBuilder()
+                                .withStreamId(STREAM_ID)
+                                .withId(randomUUID())
+                                .withName("eventA"),
+                        eventPayloadA)));
         when(eventStream.getId()).thenReturn(STREAM_ID);
 
         registerEvent(EventA.class, "eventA");
@@ -96,8 +102,14 @@ public class DefaultAggregateServiceTest {
         when(jsonObjectToObjectConverter.convert(eventPayloadB, EventB.class)).thenReturn(eventB);
 
         when(eventStream.read()).thenReturn(Stream.of(
-                envelopeFrom(metadataWithRandomUUID("eventA"), eventPayloadA),
-                envelopeFrom(metadataWithRandomUUID("eventB"), eventPayloadB)));
+                envelopeFrom(metadataBuilder()
+                        .withStreamId(STREAM_ID)
+                        .withId(randomUUID())
+                        .withName("eventA"), eventPayloadA),
+                envelopeFrom(metadataBuilder()
+                        .withStreamId(STREAM_ID)
+                        .withId(randomUUID())
+                        .withName("eventB"), eventPayloadB)));
         when(eventStream.getId()).thenReturn(STREAM_ID);
 
         registerEvent(EventA.class, "eventA");
@@ -124,9 +136,18 @@ public class DefaultAggregateServiceTest {
         when(jsonObjectToObjectConverter.convert(eventPayloadA, EventA.class)).thenReturn(eventA);
         when(jsonObjectToObjectConverter.convert(eventPayloadB, EventB.class)).thenReturn(eventB);
         when(eventStream.read()).thenReturn(Stream.of(
-                envelopeFrom(metadataWithRandomUUID("eventA"), eventPayloadA),
-                envelopeFrom(metadataWithRandomUUID("eventB"), eventPayloadB),
-                envelopeFrom(metadataWithRandomUUID("system.events.eventC"), eventPayloadB)));
+                envelopeFrom(metadataBuilder()
+                        .withStreamId(STREAM_ID)
+                        .withId(randomUUID())
+                        .withName("eventA"), eventPayloadA),
+                envelopeFrom(metadataBuilder()
+                        .withStreamId(STREAM_ID)
+                        .withId(randomUUID())
+                        .withName("eventB"), eventPayloadB),
+                envelopeFrom(metadataBuilder()
+                        .withStreamId(STREAM_ID)
+                        .withId(randomUUID())
+                        .withName("system.events.eventC"), eventPayloadB)));
 
         when(eventStream.getId()).thenReturn(STREAM_ID);
 
@@ -151,7 +172,10 @@ public class DefaultAggregateServiceTest {
         JsonObject eventPayloadA = mock(JsonObject.class);
         EventA eventA = mock(EventA.class);
         when(jsonObjectToObjectConverter.convert(eventPayloadA, EventA.class)).thenReturn(eventA);
-        when(eventStream.read()).thenReturn(Stream.of(envelopeFrom(metadataWithRandomUUID("eventA"), eventPayloadA)));
+        when(eventStream.read()).thenReturn(Stream.of(envelopeFrom(metadataBuilder()
+                .withStreamId(STREAM_ID)
+                .withId(randomUUID())
+                .withName("eventA"), eventPayloadA)));
 
         aggregateService.get(eventStream, TestAggregate.class);
     }
@@ -161,7 +185,10 @@ public class DefaultAggregateServiceTest {
         JsonObject eventPayloadA = mock(JsonObject.class);
         EventA eventA = mock(EventA.class);
         when(jsonObjectToObjectConverter.convert(eventPayloadA, EventA.class)).thenReturn(eventA);
-        when(eventStream.read()).thenReturn(Stream.of(envelopeFrom(metadataWithRandomUUID("eventA"), eventPayloadA)));
+        when(eventStream.read()).thenReturn(Stream.of(envelopeFrom(metadataBuilder()
+                .withStreamId(STREAM_ID)
+                .withId(randomUUID())
+                .withName("eventA"), eventPayloadA)));
 
         registerEvent(EventA.class, "eventA");
 
