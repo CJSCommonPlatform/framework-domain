@@ -29,6 +29,7 @@
     </modules>
 
     <properties>
+        <cpp.repo.name>framework-domain</cpp.repo.name>
         <common-bom.version>1.27.0</common-bom.version>
         <cpp.framework.version>5.0.0-SNAPSHOT</cpp.framework.version>
         <framework-api.version>3.0.0-M14</framework-api.version>
