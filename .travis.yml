@@ -16,6 +16,7 @@ before_script:
 addons:
   postgresql: '9.5'
   sonarcloud:
+    organization: cjscommonplatform
     token:
       secure: Lb5gA3NBMFf8VnTNjf2KAcy5S0+cvSSz2qaiN0diHSIi205nT12Foom27bCQnn2+Kxfzljn3hdIA3GUEipwh/UbZQHCdFl3mROMm28psWO7nZvNz82vwYlrpGiXzrkn5YAL9QRFbnzrCZwIZSGinQojaZ72H3/FwmSYlBKE++ito2HPPdD8wrLYVUBKp06u683NQQU4koLSU50pFgkbIcFkeUNwrVT8t69tW2+abEgzfpa5o6ExcPATcxKYJ8fPx/C/x9XjcNVYho5nAJ7KRy0PkS3MEAnjOIBwVHZrXb2qjeoJ5T9AJfuXwaTCyMFA/e+gyGn28CsQkzHohE4VZUovn5MdU9Hkzz9xOwU7JS8837JNAlPy2+U71oemGXwdB8D4LnuxkghBw9JukFq1EqqeLv0CQWU/iBAYYPIHIdjFUTcolPM14VhCQfj0XPIR7oyIDsOivjcK0ULSY6pInGszFgbex0ApVWD6t7l3yoFmbZMfdviAmuzUEtwwwIyffq76at64iH9rz1VbcUesF6ls+/02/Umvx1azReQqQ+/ciRCK6I/NtnfGzDvYlVtQA6+HigRBivRLbjrv9iaGHG+54aP1cne2n1QJUkke58yLjLWvhfcXIIB2nsrTqEyJx1qfMdPUlKFqrHZQJu/pp2cxY8uwkLe2Eur7jRNofIE8=
     github_token:

@@ -31,7 +31,7 @@
     <properties>
         <cpp.repo.name>framework-domain</cpp.repo.name>
         <common-bom.version>1.27.0</common-bom.version>
-        <cpp.framework.version>5.0.0-SNAPSHOT</cpp.framework.version>
+        <cpp.framework.version>5.0.0-M1</cpp.framework.version>
         <framework-api.version>3.0.0-M14</framework-api.version>
         <test-utils.version>1.17.3</test-utils.version>
         <utilities.version>1.15.1</utilities.version>
