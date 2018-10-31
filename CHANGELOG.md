@@ -5,7 +5,13 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.0.0-M2] - 2018-10-31
 
+### Updated
+- Framework version to 5.0.0-M2
+
+### Added
+- framework-domain bom
 
 ## [1.0.0-M1] - 2018-10-25
 
