@@ -7,11 +7,6 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [1.0.0-M2] - 2018-10-31
 
-### Added
-- Framework-domain-bom
-
-## [1.0.0-M2] - 2018-10-31
-
 ### Updated
 - Framework version to 5.0.0-M2
 
