@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.0.0-M3] - 2018-10-31
+
+### Updated
+-Re-release with new version number to address Travis problems
+
 ## [1.0.0-M2] - 2018-10-31
 
 ### Updated
