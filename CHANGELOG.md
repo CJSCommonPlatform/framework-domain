@@ -5,6 +5,12 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.0.0] - 2018-11-07
+
+### Updated
+- First release of framework-domain 1.0.0
+- Updated framework to 1.0.0
+
 ## [1.0.0-M4] - 2018-11-05
 ### Updated
 - Update framework to 5.0.0-M3
