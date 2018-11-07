@@ -9,7 +9,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ### Updated
 - First release of framework-domain 1.0.0
-- Updated framework to 1.0.0
+- Updated framework to 5.0.1
 
 ## [1.0.0-M4] - 2018-11-05
 ### Updated
