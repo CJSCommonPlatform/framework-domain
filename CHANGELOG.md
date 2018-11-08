@@ -5,27 +5,31 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.0.2] - 2018-11-09
+### Changed
+- Updated framework to 5.0.3
+
 ## [1.0.1] - 2018-11-07
-### Updated
+### Changed
 - Updated framework to 5.0.2
 
 ## [1.0.0] - 2018-11-07
-### Updated
+### Changed
 - First release of framework-domain 1.0.0
 - Updated framework to 5.0.1
 
 ## [1.0.0-M4] - 2018-11-05
-### Updated
+### Changed
 - Update framework to 5.0.0-M3
 
 ## [1.0.0-M3] - 2018-10-31
 
-### Updated
+### Changed
 - Re-release with new version number to address Travis problems
 
 ## [1.0.0-M2] - 2018-10-31
 
-### Updated
+### Changed
 - Framework version to 5.0.0-M2
 
 ### Added
