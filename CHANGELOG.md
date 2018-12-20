@@ -5,6 +5,9 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.0.5] - 2018-12-20
+- Updated framework to 5.0.6
+
 ## [1.0.4] - 2018-12-19
 - Updated framework to 5.0.5
 
