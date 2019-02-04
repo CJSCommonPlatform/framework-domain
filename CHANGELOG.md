@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.1.1] - 2019-02-04
+### Changed
+- Update framework to 5.1.1
+- Update common-bom to 1.29.0
+
 ## [1.1.0] - 2019-01-09
 ### Changed
 - Update framework to 5.1.0
