@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.1.2-M1] - 2019-03-01
+### Changed
+- Update framework to 5.3.0-M3
+
 ## [1.1.1] - 2019-02-04
 ### Changed
 - Update framework to 5.1.1
