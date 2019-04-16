@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.1.2-M2] - 2019-04-16
+### Changed
+- Remove deprecated github_token entry from travis.yml
+- Update framework to 6.0.0-M12
+
 ## [1.1.2-M1] - 2019-03-01
 ### Changed
 - Update framework to 5.3.0-M3
