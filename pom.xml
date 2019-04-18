@@ -32,7 +32,7 @@
     <properties>
         <cpp.repo.name>framework-domain</cpp.repo.name>
         <common-bom.version>1.29.0</common-bom.version>
-        <framework.version>6.0.0-M12</framework.version>
+        <framework.version>6.0.0-M15</framework.version>
     </properties>
 
     <dependencyManagement>
